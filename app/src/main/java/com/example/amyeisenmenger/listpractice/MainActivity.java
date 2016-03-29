@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         String[] favoriteTVShows = {"House of Cards", "Archer", "Bob's Burgers", "Sherlock",
                 "Portlandia", "Broadchurch", "Planet Earth", "Last Week Tonight"};
 
-        ListAdapter theAdapter = new ArrayAdapter<String>(this, R.layout.row_layout,
+        ListAdapter theAdapter = new MyAdapter(this,
                 favoriteTVShows);
 
         final ListView theListView = (ListView) findViewById(R.id.theListView);
